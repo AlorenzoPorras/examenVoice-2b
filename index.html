@@ -9,6 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Estilos personalizados */
+        
         body {
             padding-top: 100px;
             /* Ajuste para el navbar */
@@ -54,11 +55,16 @@
             margin: 0 auto;
             /* Centra horizontalmente */
         }
+
+
         .image-container2 {
            width: 100%;
            max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
            margin: 0 auto; /* Centra horizontalmente */
            overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+
+           max-width: none; /* Elimina el ancho máximo para que el plano se ajuste al ancho de la pantalla */
+           margin: 0; /* Elimina el margen para ocupar todo el ancho disponible */
         }
 
         .image-container img {
@@ -83,6 +89,9 @@
             position: absolute;
             width: 40px;
             height: 40px;
+
+            top: valor; /* Ajusta la posición vertical */
+            left: valor; /* Ajusta la posición horizontal */
 
         /* Mueve la imagen 50px hacia abajo */
         /* Mueve la imagen 100px hacia la derecha */
