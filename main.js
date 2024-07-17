@@ -65,24 +65,24 @@ const camaras = document.getElementById('camaras')
 const processCommand = (result) => {
     try {
         
-        if ( result === 'Encender la luz de la recámara' ){
+        if ( result === 'Turn on the bedroom light' ){
             luzRecamara.setAttribute('src', 'img/on.jpg')    
         }
-        if ( result === 'Apagar la luz de la recámara' ){
+        if ( result === 'Turn off the bedroom light' ){
             luzRecamara.setAttribute('src', 'img/off.jpg') 
         }
-        if ( result === 'Encender la luz de la sala' ){
+        if ( result === 'Turn on the light in the room' ){
             luzSala.setAttribute('src', 'img/on.jpg')    
         }
-        if ( result === 'Apagar la luz de la sala' ){
+        if ( result === 'Turn off the light in the room' ){
             luzSala.setAttribute('src', 'img/off.jpg') 
         }
 
         // luz del jardin
                 // Enciende o apaga las luces del jardín
-        if (result === 'Encender las luces del jardín') {
+        if (result === 'Turn on the garden lights') {
             document.querySelectorAll('.luzJardin').forEach(img => img.setAttribute('src', 'img/on.jpg'));
-        } else if (result === 'Apagar las luces del jardín') {
+        } else if (result === 'Turn off the garden lights') {
             document.querySelectorAll('.luzJardin').forEach(img => img.setAttribute('src', 'img/off.jpg'));
         }
         /* if ( result === 'Encender las luces del jardín' ){
@@ -92,34 +92,34 @@ const processCommand = (result) => {
             luzJardin.setAttribute('src', 'img/off.jpg') 
         }*/
 
-        if ( result === 'Encender el ventilador' ){
+        if ( result === 'Turn on the fan' ){
             ventilador.setAttribute('src', 'img/venton.gif') 
         }
-        if ( result === 'Apagar el ventilador' ){
+        if ( result === 'Turn off the fan' ){
             ventilador.setAttribute('src', 'img/ventoff.png') 
         }
 
         // Abre o cierra las cortinas
-        if (result === 'Abrir las cortinas') {
+        if (result === 'Open the curtains') {
             openCurtains();
         } 
-        if (result === 'Cerrar las cortinas') {
+        if (result === 'Close the curtains') {
             closeCurtains();
         }
 
-        if ( result === 'Activar la alarma de la casa' ){
+        if ( result === 'Activate the house alarm' ){
             alarma.setAttribute('src', 'img/alarmaon.gif') 
             alarmas.play();
         }
-        if ( result === 'Desactiva la alarma de la casa' ){
+        if ( result === 'Deactivate the house alarm' ){
             alarma.setAttribute('src', 'img/alarmaoff.png') 
             alarmas.pause();
         }
 
          // Enciende o apaga las cámaras de seguridad
-        if (result === 'Encender las cámaras de seguridad') {
+        if (result === 'Turn on security cameras') {
            document.querySelectorAll('.camaras').forEach(img => img.setAttribute('src', 'img/camera_on.png'));
-        } else if (result === 'Apagar las cámaras de seguridad') {
+        } else if (result === 'Turn off security cameras') {
            document.querySelectorAll('.camaras').forEach(img => img.setAttribute('src', 'img/camera_off.png'));
         }
 
